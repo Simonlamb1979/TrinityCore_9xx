@@ -1,1 +1,0 @@
-DELETE FROM `spell_group` WHERE `spell_id` IN (2380, 12292, 17629, 42735, 62380, 67016, 67017, 67018); 

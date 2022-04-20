@@ -1,1 +1,0 @@
-DELETE FROM `creature_template_spell` WHERE `CreatureID` > 200000;
