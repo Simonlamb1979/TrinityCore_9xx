@@ -2415,7 +2415,7 @@ void ObjectMgr::LoadCreatures()
 
         if (uint32 disallowedUnitFlags3 = (data.unit_flags3 & ~UNIT_FLAG3_ALLOWED))
         {
-            TC_LOG_ERROR("sql.sql", "Table `creature` has creature (GUID: " UI64FMTD " Entry: %u) with disallowed `unit_flags2` %u, removing incorrect flag.", guid, data.id, disallowedUnitFlags3);
+            TC_LOG_ERROR("sql.sql", "Table `creature` has creature (GUID: " UI64FMTD " Entry: %u) with disallowed `unit_flags3` %u, removing incorrect flag.", guid, data.id, disallowedUnitFlags3);
             data.unit_flags3 &= UNIT_FLAG3_ALLOWED;
         }
 
