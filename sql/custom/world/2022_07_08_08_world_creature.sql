@@ -88,3 +88,6 @@ UPDATE `gameobject` SET `spawnDifficulties` = '0' WHERE `map` = 530;
 
 UPDATE `creature` SET `spawnDifficulties` = '1,2' WHERE `map` = 553;
 UPDATE `gameobject` SET `spawnDifficulties` = '1,2' WHERE `map` = 553;
+
+UPDATE `creature` SET `MovementType` = 0 WHERE `guid` IN (307491, 650096, 650118);
+UPDATE `creature_addon` SET `auras` = '70696 74093 74094 74095 74096' WHERE `guid` = 386736;
