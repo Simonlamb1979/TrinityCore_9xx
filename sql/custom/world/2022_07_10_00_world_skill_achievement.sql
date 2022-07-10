@@ -1,0 +1,10 @@
+DELETE FROM `skill_discovery_template` WHERE `reqSpell` IN (61177, 61756, 61288, 64323);
+DELETE FROM `skill_extra_item_template` WHERE `spellId` IN (3172, 11453, 17638, 42736, 62213, 67025);
+DELETE FROM `skill_perfect_item_template` WHERE `spellId` IN (53834, 53835, 53853, 53855, 53862, 53863, 53864, 53866, 53867, 53868, 53878, 53881, 53886, 53887, 53888, 53889, 53890, 53916, 53926, 53927, 53928, 53929, 53930, 53931, 53940);
+UPDATE `achievement_reward` SET `TitleH` = `TitleA` WHERE `ID` IN (1563,1656,3478);
+UPDATE `achievement_reward` SET `TitleA` = `TitleH` WHERE `ID` IN (1683, 1691, 1693, 2798);
+DELETE FROM `achievement_reward` WHERE `ID` IN (1657, 1681, 1682, 1684, 1692, 1707, 1784, 2145, 2797, 3656);
+DELETE FROM `achievement_reward_locale` WHERE `ID` IN (1681, 1682, 2145, 3656, 4784, 4785);
+UPDATE `creature_template` SET `npcflag` = `npcflag`|1048576 WHERE `entry` = 50550;
+UPDATE `creature_template` SET `npcflag` = `npcflag`-1048576 WHERE `npcflag` >= 1048576 AND `entry` IN (34976, 49573, 62415, 62416, 62421, 62422, 62423, 62424, 168342, 144067, 144063);
+UPDATE `trainer_spell` SET `ReqSkillLine` = 0, `ReqSkillRank` = 0 WHERE `ReqSkillLine` = 129;
