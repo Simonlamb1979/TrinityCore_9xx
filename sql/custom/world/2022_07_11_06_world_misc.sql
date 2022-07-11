@@ -1,0 +1,18 @@
+DELETE FROM `playercreateinfo_item` WHERE `itemid` = 40582;
+DELETE FROM `script_waypoint` WHERE `entry` = 17238;
+UPDATE `lfg_dungeon_rewards` SET `maxLevel` = 45 WHERE `dungeonId` = 259 AND `maxLevel` = 64;
+UPDATE `lfg_dungeon_rewards` SET `maxLevel` = 60 WHERE `dungeonId` = 259 AND `maxLevel` = 70;
+UPDATE `lfg_dungeon_rewards` SET `maxLevel` = 45 WHERE `dungeonId` = 260 AND `maxLevel` = 70;
+UPDATE `lfg_dungeon_rewards` SET `maxLevel` = 60 WHERE `dungeonId` = 259 AND `maxLevel` > 60;
+DELETE FROM  gameobject_addon WHERE guid = 200067;
+DELETE FROM `quest_poi` WHERE `QuestID` = 3379 AND `BlobIndex` = 2;
+DELETE FROM `quest_poi` WHERE `QuestID` = 4451 AND `BlobIndex` = 0;
+DELETE FROM `quest_poi` WHERE `QuestID` = 6922 AND `BlobIndex` = 1;
+DELETE FROM `quest_poi` WHERE `QuestID` = 6922 AND `BlobIndex` = 2;
+DELETE FROM `quest_poi` WHERE `QuestID` = 29151 AND `BlobIndex` = 0;
+DELETE FROM `quest_poi` WHERE `QuestID` = 29178 AND `BlobIndex` = 0;
+DELETE FROM `quest_poi` WHERE `QuestID` = 31035 AND `BlobIndex` = 0;
+DELETE FROM `areatrigger_teleport` WHERE `ID` IN (4961, 702, 704, 4917, 4919, 4921, 4922, 4923, 4924, 4925, 4927, 4928, 4929, 4930, 4931, 4932, 4933, 4934, 4935, 4936, 4941, 4944);
+DELETE FROM `areatrigger_scripts` WHERE `entry` IN (2246, 2248, 2250, 2252, 2626, 2627, 2628, 2629, 2630, 2631, 2632, 2633, 2634, 2635, 2636, 2637, 4354);
+DELETE FROM `areatrigger_tavern` WHERE `id` = 4961;
+DELETE FROM `quest_mail_sender` WHERE `QuestId` IN (22817, 22818);
